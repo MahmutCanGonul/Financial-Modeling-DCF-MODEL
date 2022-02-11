@@ -19,7 +19,9 @@ Another issue is that the discount rate used to calculate net present value is v
 DCF Model Formula:
 
 CFn => Cash Flow
+
 r => Rate
+
 n => Periods
 
                DCF =>  CFn / (1+r)^n
