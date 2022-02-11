@@ -3,16 +3,20 @@ import random
 cashFlows = []
 rates = []
 values = []
-periods = random.randint(1,100)
+periods = []
+
+
+period = random.randint(1,100)
 
 def formula(cashFlow,rate,periods):
     rate = rate / 100
     return cashFlow / (1+rate)**periods
     
-for i in range(periods):
+for i in range(period):
     cashFlow = random.randint(1000,5000)
     rate = random.randint(1,100)
     value = float(formula(cashFlow,rate,i+1))
+    periods.append(i+1)
     cashFlows.append(cashFlow)
     rates.append(rate)
     values.append(value)
@@ -34,6 +38,7 @@ print()
 
 for i in range(len(temp_values)):
     if temp_values[i] == values[len(values)-1]:
+        print(f"Period: {periods[i]}")
         print(f"Best Value: {values[len(values)-1]}")
         print(f"Best value of Cash Flow: {cashFlows[i]}")
         print(f"Best value of Rate: %{rates[i]}")
@@ -42,6 +47,7 @@ print()
 
 for i in range(len(temp_values)):
     if temp_values[i] == values[0]:
+        print(f"Period: {periods[i]}")
         print(f"Lowest Value: {values[0]}")
         print(f"Lowest value of Cash Flow: {cashFlows[i]}")
         print(f"Lowest value of Rate: %{rates[i]}")
