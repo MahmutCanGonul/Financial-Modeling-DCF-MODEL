@@ -23,3 +23,18 @@ r => Rate
 n => Periods
 
                DCF =>  CFn / (1+r)^n
+
+
+🍎KEYS:
+
+💣Discounted cash flow (DCF) helps determine the value of an investment based on its future cash flows.
+
+💣The present value of expected future cash flows is arrived at by using a discount rate to calculate the DCF.
+
+💣If the DCF is above the current cost of the investment, the opportunity could result in positive returns.
+
+💣Companies typically use the weighted average cost of capital (WACC) for the discount rate, because it takes into consideration the rate of return expected by shareholders.
+
+💣The DCF has limitations, primarily in that it relies on estimations of future cash flows, which could prove inaccurate.
+
+
